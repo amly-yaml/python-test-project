@@ -39,7 +39,6 @@ app.config['DEBUG'] = True
 DEBUG = True  # True/False
 ....
 
-
 ```
 
 ## Run Flask
