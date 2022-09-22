@@ -1,0 +1,28 @@
+body {
+  background: #f5efe6;
+}
+.h1 {
+  margin-bottom: 5%;
+  color: #0b2642;
+}
+
+.myblock {
+  /* border: 1px solid black; */
+  border-radius: 4%;
+  background: wheat;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  margin-top: 20%;
+  padding: 3%;
+}
+
+.mybtn {
+  background: #c21e71;
+}
+
+.mybtn:hover {
+  background: #860144;
+}
+
+.nav-color {
+  background-color: #f96666;
+}

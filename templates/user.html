@@ -1,0 +1,59 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="container mt-5">
+  <div class="jumbotron">
+    <h1 class="display-4">Wellcome User!</h1>
+    <hr class="my-4" />
+    <h3 class="mt-5 mb-3">Daily Expenses</h3>
+    <h3 class="mt-2 mb-3">Expense Breakdown</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card shadow mb-2 rounded">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">Food</div>
+              <div id="t-food" class="col-md-6">{{t_food}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="card shadow mb-2 rounded">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">Business</div>
+              <div id="t-business" class="col-md-6">{{t_business}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="card shadow mb-2 rounded">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">Entertainment</div>
+              <div id="t-entertainment" class="col-md-6">
+                {{t_entertainment}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card shadow mb-2 rounded">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">Others</div>
+              <div id="t-other" class="col-md-6">{{t_other}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="card shadow mb-5 rounded">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">Total</div>
+              <div class="col-md-6">${{t_total}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/logout" role="button">Logout</a>
+    </p>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-12"></div>
+    <div class="col-lg-6 col-md-6 col-sm-12 myblock">
+      <h1 class="h1">Login Form</h1>
+      <form action="/login" method="POST" class="form-group">
+        <div class="form-group">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Email"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-block btn-dark mybtn">
+            Login
+          </button>
+          <a href="/signup" class="btn btn-block btn-dark mybtn">Signup</a>
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12"></div>
+  </div>
+</div>
+
+{% endblock %}
