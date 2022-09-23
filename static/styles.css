@@ -7,7 +7,6 @@ body {
 }
 
 .myblock {
-  /* border: 1px solid black; */
   border-radius: 4%;
   background: wheat;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
